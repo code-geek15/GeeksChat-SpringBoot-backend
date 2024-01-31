@@ -2,6 +2,7 @@ package com.example.GeeksChatSpringBootBackend.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,6 +13,7 @@ import java.time.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name="employees")
 public class User {
 
     @Id
