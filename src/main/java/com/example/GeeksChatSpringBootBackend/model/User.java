@@ -13,7 +13,7 @@ import java.time.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="employees")
+@Table(name="ChatUsers")
 public class User {
 
     @Id
