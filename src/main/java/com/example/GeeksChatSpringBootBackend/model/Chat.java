@@ -16,10 +16,11 @@ public class Chat {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long chatId;
 
-//    line 20 and 21 gave me an error thats why i commented the out
-//    private List<Message> messageList;
-//    private List<User> usersList;
+    @ManyToMany
+    private List<User> userList;
 
+    @OneToMany(mappedBy = "chat", cascade = CascadeType.ALL)
+    private List<Message> messages;
 
 }
 
